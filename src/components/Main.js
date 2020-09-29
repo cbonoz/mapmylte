@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types'
 import React from 'react'
 import heatmap from '../images/heatmap1.jpeg'
-import pic02 from '../images/pic02.jpg'
+import sensor from '../images/sensor.jpeg'
 // import pic03 from '../images/pic03.jpg'
 import cellstrength from '../images/Cell-Signal-Strength-Chart.jpg'
 import gps from '../images/gps.gif'
@@ -68,25 +68,34 @@ class Main extends React.Component {
           }`}
           style={{ display: 'none' }}
         >
-          <h2 className="major">Work</h2>
+          <h2 className="major">Sensor Support</h2>
           <span className="image main">
-            <img src={pic02} alt="" />
+            <img src={sensor} alt="" />
           </span>
           <p>
-            Adipiscing magna sed dolor elit. Praesent eleifend dignissim arcu,
-            at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent
-            urna nisi, fringila lorem et vehicula lacinia quam. Integer
-            sollicitudin mauris nec lorem luctus ultrices.
+            Geospatial Sensor Support:
+            <ul>
+              <li>
+                5G
+              </li>
+              <li>
+                Air quality / CO2
+              </li> 
+              <li>
+                Radiation
+              </li>
+              <li>
+                Noise Level
+              </li>
+              <li>
+                Temperature and Humidity
+              </li>
+              <li>
+                Altitude
+              </li>
+            </ul>
           </p>
-          <p>
-            Nullam et orci eu lorem consequat tincidunt vivamus et sagittis
-            libero. Mauris aliquet magna magna sed nunc rhoncus pharetra.
-            Pellentesque condimentum sem. In efficitur ligula tate urna.
-            Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor.
-            Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis
-            libero. Mauris aliquet magna magna sed nunc rhoncus amet feugiat
-            tempus.
-          </p>
+
           {close}
         </article>
 
@@ -148,31 +157,6 @@ class Main extends React.Component {
             <img src={instantshareable} alt="" style={{width: '50%'}}/>
           </p>
 
-          <hr/>
-
-          <p>
-            Geospatial Sensor Support:
-            <ul>
-              <li>
-                5G
-              </li>
-              <li>
-                Air quality / CO2
-              </li> 
-              <li>
-                Radiation
-              </li>
-              <li>
-                Noise Level
-              </li>
-              <li>
-                Temperature and Humidity
-              </li>
-              <li>
-                Altitude
-              </li>
-            </ul>
-          </p>
           {close}
         </article>
 
