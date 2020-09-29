@@ -13,6 +13,11 @@ const Header = props => (
           A consumer and industrially designed mobile app for measuring and
           analyzing LTE data wherever you are.
         </p>
+        <p>
+          <a href="https://play.google.com/store/apps/details?id=com.lte.mapmylte.mapper.www">
+            Download on Google Play Now
+          </a>
+        </p>
       </div>
     </div>
     <nav>
@@ -41,7 +46,7 @@ const Header = props => (
               props.onOpenArticle('about')
             }}
           >
-            About
+            Features
           </button>
         </li>
         <li>
