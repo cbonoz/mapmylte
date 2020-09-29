@@ -37,7 +37,7 @@ const Header = props => (
               props.onOpenArticle('work')
             }}
           >
-            Work
+            Sensor Support
           </button>
         </li>
         <li>
