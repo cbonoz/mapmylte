@@ -5,6 +5,18 @@ import Header from '../components/Header'
 import Main from '../components/Main'
 import Footer from '../components/Footer'
 
+import bg0 from '../images/bg0.jpeg'
+import bg1 from '../images/bg1.jpeg'
+import bg2 from '../images/bg2.jpeg'
+import bg3 from '../images/bg3.jpeg'
+import bg4 from '../images/bg4.jpeg'
+import bg5 from '../images/bg5.jpeg'
+import bg6 from '../images/bg6.jpeg'
+import bg7 from '../images/bg7.jpeg'
+import bg8 from '../images/bg8.jpeg'
+import bg9 from '../images/bg9.jpeg'
+
+
 class IndexPage extends React.Component {
   constructor(props) {
     super(props)
@@ -13,7 +25,13 @@ class IndexPage extends React.Component {
       timeout: false,
       articleTimeout: false,
       article: '',
-      loading: 'is-loading'
+      loading: 'is-loading',
+      bgStyle : {
+        height: "100%",
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
+        backgroundSize: "cover",
+      }
     }
     this.handleOpenArticle = this.handleOpenArticle.bind(this)
     this.handleCloseArticle = this.handleCloseArticle.bind(this)
@@ -26,6 +44,21 @@ class IndexPage extends React.Component {
         this.setState({loading: ''});
     }, 100);
     document.addEventListener('mousedown', this.handleClickOutside);
+    
+    const pictureArray = [bg0, bg1, bg2, bg3, bg4, bg5, bg6, bg7, bg8, bg9];
+    const randomIndex = Math.floor(Math.random() * pictureArray.length);
+    const selectedPicture = pictureArray[randomIndex];
+
+    this.setState({
+      bgStyle: {
+        backgroundImage: `url(${selectedPicture})`,
+        height: "100%",
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
+        backgroundSize: "cover",
+      }
+    });
+
   }
 
   componentWillUnmount () {
@@ -105,7 +138,7 @@ class IndexPage extends React.Component {
             />
             <Footer timeout={this.state.timeout} />
           </div>
-          <div id="bg"></div>
+          <div style={this.state.bgStyle} id="bg"></div>
         </div>
       </Layout>
     )
