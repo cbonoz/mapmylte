@@ -10,6 +10,7 @@ import nogps from '../images/no-gps.gif'
 import overlayimg from '../images/overlay-img.gif'
 import recordfloorplan from '../images/record-floor-plan.gif'
 import instantshareable from '../images/instant-shareable.gif'
+import Terms from './Terms'
 
 
 class Main extends React.Component {
@@ -167,16 +168,20 @@ class Main extends React.Component {
           }`}
           style={{ display: 'none' }}
         >
-          <h2 className="major">Contact</h2>
+          <h2 className="major">Terms of Use</h2>
           <span className="image main">
             <img src={heatmap} alt="" />
           </span>
           
+  
+          <Terms/>
+
           <p>Please email us any questions or comments or if you would like to participate in user research at:<br/>
             <a href="mailto:mapmylte@gmail.com">
               mapmylte@gmail.com
             </a>
           </p>
+
           
           {/* <form method="post" action="#">
             <div className="field half first">
