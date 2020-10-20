@@ -12,6 +12,7 @@ import recordfloorplan from '../images/record-floor-plan.gif'
 import instantshareable from '../images/instant-shareable.gif'
 import Terms from './Terms'
 
+import phonemockup from '../images/phone-mockup.png'
 
 class Main extends React.Component {
   render() {
@@ -39,26 +40,31 @@ class Main extends React.Component {
         >
           <h2 className="major">Intro</h2>
           <span className="image main">
-            <img src={cellstrength} alt="" />
+            <img src={phonemockup} alt="" />
           </span>
           <p>
             Map My LTE is a surveying tool for 2G/3G/4G/5G
             cellular network information using both consumer
-            Android and Firstnet Android devices, Allowing data
+            Android and FirstNet Android devices, Allowing data
             being recorded and displayed over the heatmaps. The
             same app platform can be used for surveying air
             quality, radiation, noise level and many other through
             IoT add ons.
           </p>
           <p>
-            We currently have an android application that can
-            collect LTE signals using GPS, non GPS (wifi LTE
+            We currently have an Android application that can
+            collect LTE signals using GPS, non GPS (WiFi LTE
             location), and ability to insert floor plans on the
-            application itself. The application then have the
-            ability to export the survey data into csv as well as
-            uploading the data to Firebase for cloud storage.
+            application itself. The application then has the
+            ability to export the survey data into CSV as well as
+            upload the data to Firebase for cloud storage.
             The application is ready to use and be deployed.
           </p>
+
+          <span className="image main">
+            <img src={cellstrength} alt="" />
+          </span>
+
           {close}
         </article>
 
