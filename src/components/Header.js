@@ -10,11 +10,14 @@ const Header = props => (
       <div className="inner">
         <h1>Map My LTE</h1>
         <p>
-          A consumer and industrially designed mobile app for measuring and
-          analyzing LTE data wherever you are.
+          An industrially designed mobile app for measuring and mapping LTE
+          strength wherever you are.
         </p>
         <p>
-          <a href="https://play.google.com/store/apps/details?id=com.lte.mapmylte.mapper.www">
+          <a
+            href="https://play.google.com/store/apps/details?id=com.lte.mapmylte"
+            target="_blank"
+          >
             Download on Google Play Now
           </a>
         </p>
